@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+HK:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Noto Serif HK";
+    text-align: center;
+}
+
+
+body{
+    background : no-repeat center fixed url("img/day/Clouds.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+}
+
+    
+/*CONTEINER DATA*/
+.divContainer{
+    position: relative;
+    background-color: rgba(5, 0, 0, 0.719);
+    color: white;
+    border: 10px solid rgba(0, 7, 6, 0.808);
+    border-radius: 1rem;
+    display: flex;
+    flex-flow: column;
+    padding: 1.5em;
+    font-size: 18px; 
+}
+
+
+/*YEAR/MONTH/DAY*/
+.whYearMonthDay{
+    color: rgb(249, 252, 252);
+    font-weight:900;
+    font-size: 1.5em;
+}
+
+
+/*CLOCK*/
+.whHours{
+    color :rgb(2, 245, 95);
+    padding-bottom:.5rem;
+    border-bottom:10px solid rgb(32, 100, 100);
+    border-bottom-left-radius: 70%;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+
+/*DATA API LOCALIDAD*/
+.whLocalidad{
+    font-weight:900;
+    font-weight: 600;
+    font-size:1.7em;
+}
+
+
+/*DATA API ADICIONAL*/
+.dataAdicionalTem{
+    font-size:2em;
+}
+
+.whDescripcion{
+    font-size:1.7em; 
+}
+
+.dataAdicionalSt,
+.dataAdicionalTemm,
+.dataAdicionalTemM,
+.dataAdicionalHum{
+    font-size: 1em;
+    font-weight: 400;
+    
+}
+
+
+/*BUTTON*/
+.whButtonUbicacion{
+    font-size: .8rem;
+    font-weight: 600;
+    margin: 1.5rem auto 0;
+    padding: .7em;
+    background-color: rgb(2, 245, 95);
+    color: rgb(0, 0, 0);
+    border:none;
+    border-radius: 8px;
+    box-shadow: 0em .3em 0em  rgb(4, 192, 76) , 0em .5em 1em 0.2em  rgb(85, 81, 81);
+}
+.whButtonUbicacion:hover{
+    color: white;
+    background-color: rgba(143, 138, 138, 0.849);
+    box-shadow: 0em .3em 0em  rgb(64, 66, 64) , 0em .5em 1em 0.2em  rgb(59, 57, 57);
+    cursor:pointer;
+}
+.whButtonUbicacion:active{
+    background-color: rgb(222, 228, 224);
+    border-color:rgb(15, 60, 156)
+}
+
+
+/*AUTOR*/
+.autor{
+    font-size:.7em ;
+    font-weight:400;
+    margin-top: 2rem;
+}
+.autor a{
+    text-decoration:none;
+    color: rgb(255, 255, 255);
+}
+.autor a:hover{
+    color: rgb(237, 219, 20);
+}
+
+
+/*ICON-GITHUB*/
+.iconGitHub{
+    position: absolute;
+    right: 1em;
+    bottom: .5em;
+}
+.iconGitHub img{
+    border-radius: 100%;
+    height: 2em;
+    width: 2em;
+}
+
+.iconLinkedin{
+    position: absolute;
+    right: 4em;
+    bottom: .5em;
+}
+
+.iconLinkedin img {
+    height: 2em;
+    width: 2em;
+}
+
+
+
+
+/*@MEDIA*/
+@media screen and (max-width: 500px) {
+    .divContainer{
+        border: 5px solid rgba(0, 7, 6, 0.808);
+        padding: 1em;
+        font-size: 16px; 
+    }
+}
+@media screen and (max-width: 300px){
+    .divContainer{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 240px){
+    .divContainer{
+        font-size: 10px;
+    }
+  }
