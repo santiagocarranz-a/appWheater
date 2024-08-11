@@ -1,8 +1,10 @@
-# Wheater SC App
 
 <p align ="center">
   <img src="https://github.com/santiagocarranz-a/appWheater/blob/master/apcli.png"/>
 </p>
+
+<h1 align="center">Wheater SC App</h1>
+<br>
 
 **Demo:** [Wheater SC App](https://santiagocarranz-a.github.io/)
 
