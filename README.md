@@ -1,53 +1,43 @@
-# <p align ="center">Wheater SC app</p>
+# Wheater SC App
+
 <p align ="center">
-  <img src="https://github.com/santiagocarranz-a/santiagocarranz-a.github.io/blob/6182f24b13fd441aed308f2c530448862ea37d9b/apcli.png" alt="appClima-img"/>
-  <br>
+  <img src="https://github.com/santiagocarranz-a/appWheater/blob/master/apcli.png"/>
 </p>
 
-Demo:
-https://santiagocarranz-a.github.io/
+**Demo:** [Wheater SC App](https://santiagocarranz-a.github.io/)
 
-Wheater SC app es un proyecto particular donde se podrá consultar el clima por medio de Geolocalización.
-Ésta app fue creada gracias al aporte de datos climaticos de la API "https://openweathermap.org/".
+## Descripción
 
+**Wheater SC app** es una aplicación sencilla que permite consultar el clima actual en tu ubicación a través de la geolocalización. La aplicación obtiene datos climáticos en tiempo real mediante la API de [OpenWeatherMap](https://openweathermap.org/).
 
-## Secciones:
-```
-1. Como funciona
-2. Tareas Realizadas
-```
+## Secciones
 
-### 1° ¿Cómo funciona?
-```
-a. Solicitud al usuario para que brinde acceso a su ubicación
-b. Conservación de las coordenadas geográficas (latitud y longitud)
-c. Consumo de la API con los parametros que se obtuvieron previamente del usuario (coordenadas geográficas)
-d. Manipulación de los datos que se ha recibido de la API 
-e. Diseño para su visualización en el DOM
-```
+1. [¿Cómo funciona?](#cómo-funciona)
+2. [Tareas Realizadas](#tareas-realizadas)
+3. [Tecnologías Utilizadas](#tecnologías-utilizadas)
 
-### 2° Tareas Realizadas
+## ¿Cómo funciona?
 
-* Obtension de datos de servidor externo (Consumo de API "https://openweathermap.org/").
+1. **Solicitud de ubicación:** Al abrir la aplicación, se solicita al usuario que permita el acceso a su ubicación.
+2. **Obtención de coordenadas:** Se obtienen las coordenadas geográficas (latitud y longitud) del usuario utilizando `navigator.geolocation`.
+3. **Consumo de API:** Con las coordenadas obtenidas, se realiza una solicitud a la API de OpenWeatherMap para obtener los datos climáticos.
+4. **Manipulación de datos:** Los datos recibidos de la API se procesan para extraer y transformar la información relevante.
+5. **Visualización en el DOM:** Los datos climáticos procesados se muestran en la interfaz de usuario de manera clara y visualmente atractiva.
 
-* Manipulación de un objeto Json;<br>
-*Extracción de datos.* <br>
-*Transformación de datos en otro formato para su posible uso.*
+## Tareas Realizadas
 
-* Obtension de coordenadas geográficas del usuario (latitud y longitud) por medio del llamado a navigator.geolocation y a travez de él acceder a la Api de geolocalización.
+- **Consumo de API:** Obtención de datos desde el servidor externo de OpenWeatherMap.
+- **Manipulación de JSON:** Extracción y transformación de datos para su uso en la aplicación.
+- **Geolocalización:** Obtención de las coordenadas geográficas del usuario utilizando `navigator.geolocation`.
+- **Manipulación de fechas y horas:** Uso del objeto `Date` para mostrar la fecha y hora actual en la interfaz.
+- **Diseño dinámico:** Configuración de íconos y fondos dinámicos basados en los datos climáticos (día/noche, estado del clima).
+- **Inserción en el DOM:** Inyección de contenido dinámico en la página utilizando JavaScript.
+- **Responsive design:** Adaptación de la interfaz para diferentes dispositivos utilizando unidades de medida `em` y la etiqueta `@meta`.
 
-* Manipulación del objeto Date para obtener y pintar en el navegador datos como:<br>
-*Fecha (año, mes, dia).* <br>
-*Horario (hora, minutos, segundos).*
+## Tecnologías Utilizadas
 
-* Configuración de iconos y background dinamicos en función de los datos que se vayan obteniendo de la API:<br>
-*Dia/noche* <br>
-*Estado climatico (despejado, nublado, lluvioso, nieve, tormenta).*
+- **HTML**
+- **CSS**
+- **JavaScript**
 
-* Inserción de contenido en el DOM desde Javacript.
-
-* Configuración de manera responsive design. Utilizando unidades de medidas "em" y @meta
-
-
-
-
+Esta aplicación ha sido desarrollada utilizando tecnologías puras, sin el uso de frameworks.
